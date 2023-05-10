@@ -8,8 +8,6 @@ const Models = require(path.resolve('models','index.js'));
 
 app.use(bodyParser.json());
 
-app.use(cors());
-
 app.use('/posts', postRoutes);
 
 const PORT = process.env.PORT|| 3000;
